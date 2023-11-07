@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-dark-subtle">
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="w-100">
+      <a class="navbar-brand d-flex align-self-center justify-content-center" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#ffffff" class="bi bi-fuel-pump-fill" viewBox="0 0 16 16">
+            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1c.564 0 1.034.11 1.412.336.383.228.634.551.794.907.295.655.294 1.465.294 2.081V7.5a.5.5 0 0 1-.5.5H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V2Zm2.5 0a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5Z"/>
+          </svg>
+      </a>  
+      
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row align-items-end justify-content-end">
+          <li class="nav-item flex-grow-1">
+            <a class="nav-link ms-2 text-light fw-medium" href="/">EcoCombustíveis</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link ms-2 text-light fw-medium" href="cadastroUsuario">Login</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link ms-2 text-light fw-medium" href="cadastroEcoCombustiveis">Cadastro Produto</a>
+          </li> 
+        </ul>
+    </div>
+  </nav>
+      <form class="d-flex align-items-center flex-column mt-5" action="/cadastroEcoCombustiveis" method="post">
+        <div class="d-flex flex-row w-100 justify-content-center">
+            <div class="mb-3" style="width: 15%;">
+                <label for="id_combustivel" class="form-label">Id do Combustivel</label>
+                <input type="number" class="form-control" id="id_combustivel" placeholder="" name="id_combustivel">
+              </div>
+              <div class="mb-3"  style="width: 15%;">
+                <label for="tipo" class="form-label">Tipo</label>
+                <input type="text" class="form-control" id="tipo" placeholder="" name="tipo">
+              </div>
+        </div>
+        <div class="d-flex flex-row w-100 justify-content-center">
+            <div class="mb-3"  style="width: 15%;">
+              <label for="descricao" class="form-label">Descricao</label>
+              <input type="text" class="form-control" id="descricao" placeholder="" name="descricao">
+          </div>  
+          <div class="mb-3" style="width: 15%;">
+            <label for="litrosEmEstoque" class="form-label">Litros em Estoque</label>
+            <input type="number" class="form-control" id="litrosEmEstoque" placeholder="" name="litrosEmEstoque">
+          </div>
+      </div>
+      <div class="d-flex flex-row w-100 justify-content-center">
+        <div class="mb-3" style="width: 15%;">
+          <label for="dataRecebimento" class="form-label">Data de Recebimento</label>
+          <input type="date" class="form-control" id="dataRecebimento" placeholder="" name="dataRecebimento">
+      </div>
+    </div>
+        <button type="submit" class="btn btn-secondary" style="width: 15%;">Concluir</button>
+      </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
